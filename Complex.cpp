@@ -48,11 +48,11 @@ Complex& Complex::operator*=(const Complex& other) {
 	return *this;
 }
 Complex& Complex::operator/=(const Complex& other) {
-	float newre, newim, denominator = other.re * other.re + other.im * other.im;
-	newre = (re * other.re + im * other.im) / denominator;
-	newim = (im * other.re - re * other.im) / denominator;
-	re = newre;
-	im = newim;
+	float new_re, new_im, denominator = other.re * other.re + other.im * other.im;
+	new_re = (re * other.re + im * other.im) / denominator;
+	new_im = (im * other.re - re * other.im) / denominator;
+	re = new_re;
+	im = new_im;
 	return *this;
 }
 
