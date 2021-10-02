@@ -1,5 +1,5 @@
-#ifndef SUDEEYA_HUAWEI 
-#define SUDEEYA_HUAWEI
+#ifndef HUAWEI_COMPLEX_H 
+#define HUAWEI_COMPLEX_H
 
 struct Complex {
 
