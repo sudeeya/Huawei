@@ -118,7 +118,7 @@ bool test11() {
 bool test12() {
 	Complex num{ 3, 4 };
 	float ans = 5, res;
-	res = num.my_abs();
+	res = num.complex_abs();
 	if (abs(res - ans) < eps)
 		return true;
 	return false;

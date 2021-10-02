@@ -36,6 +36,11 @@ Complex Complex::operator/(const Complex& other) const {
 	return res;
 }
 
+Complex Complex::operator*(const float other) const {
+	Complex res{ re * other, im * other };
+	return res;
+}
+
 Complex& Complex::operator+=(const Complex& other) {
 	re += other.re;
 	im += other.im;
@@ -79,6 +84,11 @@ bool Complex::operator!=(const Complex& other) const {
 	return !(*this == other);
 }
 
-float Complex::my_abs() const {
+float Complex::complex_abs() const {
 	return sqrt(re * re + im * im);
+}
+
+Complex operator*(const float lhs, const Complex& rhs) {
+	Complex res{ rhs.re * lhs, rhs.im * lhs };
+	return res;
 }

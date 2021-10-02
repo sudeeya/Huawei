@@ -1,7 +1,5 @@
-#ifndef Users_sudeeya_source_repos_gitHuawei 
-#define Users_sudeeya_source_repos_gitHuawei
-
-#include <iostream>
+#ifndef SUDEEYA_HUAWEI 
+#define SUDEEYA_HUAWEI
 
 struct Complex {
 
@@ -20,6 +18,8 @@ struct Complex {
 	Complex operator*(const Complex& other) const;
 	Complex operator/(const Complex& other) const;
 
+	Complex operator*(const float other) const;
+
 	Complex& operator+=(const Complex& other);
 	Complex& operator-=(const Complex& other);
 	Complex& operator*=(const Complex& other);
@@ -30,8 +30,10 @@ struct Complex {
 	bool operator==(const Complex& other) const;
 	bool operator!=(const Complex& other) const;
 
-	float my_abs() const;
+	float complex_abs() const;
 
 };
+
+Complex operator*(const float lhs, const Complex& rhs);
 
 #endif
